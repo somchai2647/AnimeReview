@@ -1,22 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function AnimeCard({ item }) {
 
     var string = "this is a string";
     var length = 7;
     var trimmedString = string.substring(0, length);
+    useEffect(() => {
+        const textScore = item.Score
+        const arr1 = textScore.split("|")
+        console.log(arr1.map(text=>{
+            return text.split(" ")
+        }))
+    }, [])
 
     return (
         <div>
-            <figure className="snip1543 shadow-lg">
-                <img src={item.PictureAnime} alt={item.Name} />
+            <figure className="snip1477">
+                <img src={item.PictureAnime} alt="sample38" />
+                <div className="title">
+                    <div>
+                        <h2>{ }</h2>
+                        <h4>Tool</h4>
+                    </div>
+                </div>
                 <figcaption>
-                    <h3>{item.Name}</h3>
-                    <p>{item.Synopsis.substring(0, 200)}</p>
+                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
                 </figcaption>
                 <a href="#" />
             </figure>
-
         </div>
 
     )

@@ -1,162 +1,142 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Teko:700);
-.snip1543 {
-  background-color: #fff;
-  color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  margin: 10px;
-  max-width: 315px;
-  min-width: 330px;
-  overflow: hidden;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1477 {
+  font-family: "Raleway", Arial, sans-serif;
   position: relative;
-  text-align: left;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
   width: 100%;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
 }
-
-.snip1543 *,
-.snip1543 *:before,
-.snip1543 *:after {
+figure.snip1477 *,
+figure.snip1477 *:before,
+figure.snip1477 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
 }
-
-.snip1543 img {
-  backface-visibility: hidden;
+figure.snip1477 img {
   max-width: 100%;
+  backface-visibility: hidden;
   vertical-align: top;
-  object-fit: contain;
+  opacity: 0.9;
 }
-
-.snip1543:before,
-.snip1543:after {
+figure.snip1477 .title {
   position: absolute;
+  top: 58%;
+  left: 25px;
+  padding: 5px 10px 10px;
+}
+figure.snip1477 .title:before,
+figure.snip1477 .title:after {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+}
+figure.snip1477 .title:before {
   top: 0;
+  left: 10px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+figure.snip1477 .title:after {
   bottom: 0;
-  left: 0;
-  right: 0;
-  content: '';
-  background-color: #b81212;
-  opacity: 0.5;
-  -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  right: 10px;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
-
-.snip1543:before {
-  -webkit-transform: skew(30deg) translateX(-80%);
-  transform: skew(30deg) translateX(-80%);
-}
-
-.snip1543:after {
-  -webkit-transform: skew(-30deg) translateX(-70%);
-  transform: skew(-30deg) translateX(-70%);
-}
-
-.snip1543 figcaption {
+figure.snip1477 .title div:before,
+figure.snip1477 .title div:after {
+  width: 2px;
+  height: 300px;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 1;
-  bottom: 0;
-  padding: 25px 40% 25px 20px;
+  content: "";
+  background-color: #ffffff;
 }
-
-.snip1543 figcaption:before,
-.snip1543 figcaption:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+figure.snip1477 .title div:before {
+  top: 10px;
   right: 0;
-  background-color: #b81212;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  content: '';
-  opacity: 0.5;
-  z-index: -1;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }
-
-.snip1543 figcaption:before {
-  -webkit-transform: skew(30deg) translateX(-100%);
-  transform: skew(30deg) translateX(-100%);
+figure.snip1477 .title div:after {
+  bottom: 10px;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
-
-.snip1543 figcaption:after {
-  -webkit-transform: skew(-30deg) translateX(-90%);
-  transform: skew(-30deg) translateX(-90%);
-}
-
-.snip1543 h3,
-.snip1543 p {
+figure.snip1477 h2,
+figure.snip1477 h4 {
   margin: 0;
-  opacity: 0;
-  letter-spacing: 1px;
-  text-overflow: ellipsis;
-}
-
-.snip1543 h3 {
-  font-family: 'Teko', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1em;
   text-transform: uppercase;
 }
-
-.snip1543 p {
-  font-size: 0.9em;
+figure.snip1477 h2 {
+  font-weight: 400;
 }
-
-.snip1543 a {
+figure.snip1477 h4 {
+  display: block;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  color: #000000;
+}
+figure.snip1477 figcaption {
+  position: absolute;
+  bottom: 42%;
+  left: 25px;
+  text-align: left;
+  opacity: 0;
+  padding: 5px 60px 5px 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+figure.snip1477 figcaption p {
+  margin: 0;
+}
+figure.snip1477 a {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
 }
-
-.snip1543:hover h3,
-.snip1543.hover h3,
-.snip1543:hover p,
-.snip1543.hover p {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 0.9;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+figure.snip1477:hover img,
+figure.snip1477.hover img {
+  zoom: 1;
+  filter: alpha(opacity=35);
+  -webkit-opacity: 0.35;
+  opacity: 0.35;
 }
-
-.snip1543:hover:before,
-.snip1543.hover:before {
-  -webkit-transform: skew(30deg) translateX(-20%);
-  transform: skew(30deg) translateX(-20%);
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after,
+figure.snip1477:hover .title div:before,
+figure.snip1477.hover .title div:before,
+figure.snip1477:hover .title div:after,
+figure.snip1477.hover .title div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
-
-.snip1543:hover:after,
-.snip1543.hover:after {
-  -webkit-transform: skew(-30deg) translateX(-10%);
-  transform: skew(-30deg) translateX(-10%);
-}
-
-.snip1543:hover figcaption:before,
-.snip1543.hover figcaption:before {
-  -webkit-transform: skew(30deg) translateX(-40%);
-  transform: skew(30deg) translateX(-40%);
+figure.snip1477:hover .title:before,
+figure.snip1477.hover .title:before,
+figure.snip1477:hover .title:after,
+figure.snip1477.hover .title:after {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-
-.snip1543:hover figcaption:after,
-.snip1543.hover figcaption:after {
-  -webkit-transform: skew(-30deg) translateX(-30%);
-  transform: skew(-30deg) translateX(-30%);
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+figure.snip1477:hover figcaption,
+figure.snip1477.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
