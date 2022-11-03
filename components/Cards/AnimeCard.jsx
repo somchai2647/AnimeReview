@@ -20,13 +20,14 @@ export default function AnimeCard({ item }) {
             <figure className="snip1477">
                 <img src={item.PictureAnime} alt="sample38" />
                 <div className="title">
-                    <div>
-                        <h2>คะแนนรวม</h2>
-                        <h4>{score}</h4>
+                    <div className='drop-shadow-lg'>
+                        <h2 className=''>คะแนนรวม</h2>
+                        <h4>⭐ {score}</h4>
                     </div>
                 </div>
                 <figcaption>
-                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                    <p className='ml-4'>{item.Name}...</p>
+                    <p className='ml-4'>{item.Synopsis.substring(0, 201)}...</p>
                 </figcaption>
                 <a href="#" />
             </figure>

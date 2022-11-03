@@ -1,12 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+/* https://codepen.io/littlesnippets/pen/bpMmBO */
+
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,200&display=swap);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 figure.snip1477 {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Kanit", Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
+  max-height: 439px;
+  overflow-y: hidden;
   width: 100%;
   color: #ffffff;
   text-align: center;
