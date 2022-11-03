@@ -4,6 +4,7 @@ import App from './App'
 import "./styles/App.css"
 import "./styles/tailwind.css"
 import "./styles/AnimeCard.css"
+import "./styles/Glass.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

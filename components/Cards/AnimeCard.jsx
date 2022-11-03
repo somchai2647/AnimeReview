@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AnimeCard({ item }) {
 
@@ -11,12 +12,12 @@ export default function AnimeCard({ item }) {
         setScore(TextScore2.split(" ")[2])
     }, [])
 
-    async function handleClick(){
+    async function handleClick() {
         console.log("CLICK")
     }
 
     return (
-        <div onClick={handleClick}>
+        <Link to={`/anime/${item.Name}`}>
             <figure className="snip1477 cursor-pointer rounded-xl drop-shadow-xl">
                 <img src={item.PictureAnime} alt="sample38" />
                 <div className="title bg-slate-200  bg-opacity-30">
@@ -31,7 +32,7 @@ export default function AnimeCard({ item }) {
                     </p>
                 </figcaption>
             </figure>
-        </div>
+        </Link>
 
     )
 }

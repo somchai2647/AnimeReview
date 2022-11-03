@@ -9,7 +9,13 @@ export default function useAnime() {
         return data.filter(item => item.Company == company)
     }
 
-    return { getAnimes }
+    async function getAnime(name) {
+
+        const data = await JSON.parse(JSON.stringify(AnimeData))
+        return data.filter(item => item.Name == name)[0]
+    }
+
+    return { getAnimes, getAnime }
 
 }
 

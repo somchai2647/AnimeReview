@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomeScreen from './pages/HomeScreen'
 import Company from './pages/Company'
+import DetailAnime from './pages/DetailAnime'
 
 
 export default function App() {
@@ -18,6 +19,9 @@ export default function App() {
         </Route>
         <Route path="/company/:name">
           <Company />
+        </Route>
+        <Route path="/anime/:name">
+          <DetailAnime />
         </Route>
       </Switch>
     </Router>
