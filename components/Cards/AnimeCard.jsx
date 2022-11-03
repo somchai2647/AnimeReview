@@ -17,17 +17,16 @@ export default function AnimeCard({ item }) {
 
     return (
         <div>
-            <figure className="snip1477">
+            <figure className="snip1477 rounded-xl drop-shadow-xl">
                 <img src={item.PictureAnime} alt="sample38" />
-                <div className="title">
+                <div className="title bg-slate-200  bg-opacity-30">
                     <div className='drop-shadow-lg'>
                         <h2 className=''>คะแนนรวม</h2>
                         <h4>⭐ {score}</h4>
                     </div>
                 </div>
                 <figcaption>
-                    <p className='ml-4'>
-                        <span className='font-extrabold'>{item.Name}</span> <br />
+                    <p className='ml-4 break-all'>
                         {item.Synopsis.substring(0, 201)}...
                     </p>
                 </figcaption>

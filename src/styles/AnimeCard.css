@@ -105,7 +105,8 @@ figure.snip1477 figcaption {
 }
 figure.snip1477 figcaption p {
   margin: 0;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
 }
 figure.snip1477 a {
   position: absolute;
