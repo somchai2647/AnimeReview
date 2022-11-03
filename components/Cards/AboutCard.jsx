@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AboutCard() {
+export default function AboutCard({ src }) {
     return (
         <div>
             <div className="bg-white py-6 sm:py-8 lg:py-12">
@@ -8,7 +8,7 @@ export default function AboutCard() {
                     <div className="md:h-80 flex flex-col sm:flex-row bg-gray-200 rounded-lg overflow-hidden">
                         {/* image - start */}
                         <div className="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-gray-300">
-                            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Andras Vas" className="w-full h-full object-cover object-center" />
+                            <img src={src} loading="lazy" alt="Photo by Andras Vas" className="w-full h-full object-cover object-center" />
                         </div>
                         {/* image - end */}
                         {/* content - start */}

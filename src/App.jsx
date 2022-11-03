@@ -5,9 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import Company from './pages/Company'
 import HomeScreen from './pages/HomeScreen'
 import DetailAnime from './pages/DetailAnime'
+import About from './pages/About'
 
 
 export default function App() {
@@ -20,6 +22,9 @@ export default function App() {
           <Route exact path="/">
             <HomeScreen />
           </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
           <Route path="/company/:name">
             <Company />
           </Route>
@@ -28,7 +33,7 @@ export default function App() {
           </Route>
         </Switch>
       </div>
-
+      <Footer />
     </Router>
   )
 }

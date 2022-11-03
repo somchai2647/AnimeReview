@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function CompanyNavbar() {
+export default function CompanyNavbar({ name }) {
     return (
-        <div className='flex bg-pink-300 bg-opacity-50 justify-center'>
+        <div className='flex drop-shadow-xl bg-opacity-50 justify-center '>
             <img
-                src="/assets/company/1.witstudio.png"
+                src={`/assets/company/${name=="J.C.STAFF"? "J C STAFF" : name}.png`}
                 alt="companybrand"
-                style={{width:"15rem"}}
+                style={{ width: "20rem" }}
             />
         </div>
     )
