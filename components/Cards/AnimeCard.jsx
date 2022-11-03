@@ -26,8 +26,10 @@ export default function AnimeCard({ item }) {
                     </div>
                 </div>
                 <figcaption>
-                    <p className='ml-4'>{item.Name}...</p>
-                    <p className='ml-4'>{item.Synopsis.substring(0, 201)}...</p>
+                    <p className='ml-4'>
+                        <span className='font-extrabold'>{item.Name}</span> <br />
+                        {item.Synopsis.substring(0, 201)}...
+                    </p>
                 </figcaption>
                 <a href="#" />
             </figure>

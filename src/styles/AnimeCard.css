@@ -33,9 +33,9 @@ figure.snip1477 img {
 }
 figure.snip1477 .title {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 25px;
-  padding: 5px 10px 10px;
+  padding: 10px 10px 10px;
 }
 figure.snip1477 .title:before,
 figure.snip1477 .title:after {
@@ -104,7 +104,8 @@ figure.snip1477 figcaption {
   letter-spacing: 1.5px;
 }
 figure.snip1477 figcaption p {
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 1rem;
 }
 figure.snip1477 a {
   position: absolute;
