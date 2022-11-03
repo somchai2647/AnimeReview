@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function CompanyCardWarpper({ data = [] }) {
   return (
-    <div className="cards-list">
+    <div className="cards-list grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
       {data.map((item, index) => (
         <Card key={index} item={item} />
       ))}
