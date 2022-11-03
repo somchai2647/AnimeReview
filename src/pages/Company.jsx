@@ -24,11 +24,14 @@ export default function Company() {
     return (
         <div>
             <h1 className='text-center text-orange-600 text-7xl font-bold'>{name}</h1>
-            <div className="flex flex-wrap justify-center gap-4">
-                {anime.map((item) => (
-                    <AnimeCard item={item} key={item.Name} />
-                ))}
+            <div className="container content-center p-5">
+                <div className="flex flex-wrap justify-start gap-4">
+                    {anime.map((item) => (
+                        <AnimeCard item={item} key={item.Name} />
+                    ))}
+                </div>
             </div>
+
         </div>
     )
 }
