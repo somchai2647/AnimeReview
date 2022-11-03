@@ -4,20 +4,20 @@ export default function AnimeCard({ item }) {
 
     const [score, setScore] = useState([])
 
-    var string = "this is a string";
-    var length = 7;
-    var trimmedString = string.substring(0, length);
     useEffect(() => {
-        console.log(item)
         const textScore = item.Score
         const arr1 = textScore.split("|")
         const TextScore2 = arr1[5]
         setScore(TextScore2.split(" ")[2])
     }, [])
 
+    async function handleClick(){
+        console.log("CLICK")
+    }
+
     return (
-        <div>
-            <figure className="snip1477 rounded-xl drop-shadow-xl">
+        <div onClick={handleClick}>
+            <figure className="snip1477 cursor-pointer rounded-xl drop-shadow-xl">
                 <img src={item.PictureAnime} alt="sample38" />
                 <div className="title bg-slate-200  bg-opacity-30">
                     <div className='drop-shadow-lg'>
@@ -30,7 +30,6 @@ export default function AnimeCard({ item }) {
                         {item.Synopsis.substring(0, 201)}...
                     </p>
                 </figcaption>
-                <a href="#" />
             </figure>
         </div>
 

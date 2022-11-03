@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Milgran";
+  src: url("/assets/font/MilgranRegular-jE0MG.ttf");
+}
+
 html {
   background: url("/assets/background.gif") no-repeat center center;
   -webkit-background-size: cover;
@@ -10,6 +15,10 @@ html {
   width: 100%;
   padding: 0px;
   margin: 0px;
+}
+
+.title-conpany {
+  font-family: "Milgran", "Kanit", sans-serif;
 }
 
 .textfont {
