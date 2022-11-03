@@ -29,13 +29,13 @@ figure.snip1477 img {
 }
 figure.snip1477 .title {
   position: absolute;
-  top: 58%;
+  top: 50%;
   left: 25px;
   padding: 5px 10px 10px;
 }
 figure.snip1477 .title:before,
 figure.snip1477 .title:after {
-  height: 2px;
+  height: 1px;
   width: 400px;
   position: absolute;
   content: "";
@@ -100,7 +100,7 @@ figure.snip1477 figcaption {
   letter-spacing: 1.5px;
 }
 figure.snip1477 figcaption p {
-  margin: 0;
+  margin-bottom: 40px;
 }
 figure.snip1477 a {
   position: absolute;

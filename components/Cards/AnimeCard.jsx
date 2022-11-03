@@ -1,16 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function AnimeCard({ item }) {
+
+    const [score, setScore] = useState([])
 
     var string = "this is a string";
     var length = 7;
     var trimmedString = string.substring(0, length);
     useEffect(() => {
+        console.log(item)
         const textScore = item.Score
         const arr1 = textScore.split("|")
-        console.log(arr1.map(text=>{
-            return text.split(" ")
-        }))
+        const TextScore2 = arr1[5]
+        setScore(TextScore2.split(" ")[2])
     }, [])
 
     return (
@@ -19,8 +21,8 @@ export default function AnimeCard({ item }) {
                 <img src={item.PictureAnime} alt="sample38" />
                 <div className="title">
                     <div>
-                        <h2>{ }</h2>
-                        <h4>Tool</h4>
+                        <h2>คะแนนรวม</h2>
+                        <h4>{score}</h4>
                     </div>
                 </div>
                 <figcaption>
