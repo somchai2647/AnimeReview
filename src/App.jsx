@@ -4,8 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import HomeScreen from './pages/HomeScreen'
+import Navbar from '../components/Navbar'
 import Company from './pages/Company'
+import HomeScreen from './pages/HomeScreen'
 import DetailAnime from './pages/DetailAnime'
 
 
@@ -13,17 +14,21 @@ export default function App() {
 
   return (
     <Router basename='/'>
-      <Switch>
-        <Route exact path="/">
-          <HomeScreen />
-        </Route>
-        <Route path="/company/:name">
-          <Company />
-        </Route>
-        <Route path="/anime/:name">
-          <DetailAnime />
-        </Route>
-      </Switch>
+      <Navbar />
+      <div className='relative'>
+        <Switch>
+          <Route exact path="/">
+            <HomeScreen />
+          </Route>
+          <Route path="/company/:name">
+            <Company />
+          </Route>
+          <Route path="/anime/:name">
+            <DetailAnime />
+          </Route>
+        </Switch>
+      </div>
+
     </Router>
   )
 }
