@@ -15,7 +15,7 @@ import About from './pages/About'
 export default function App() {
 
   return (
-    <Router basename='/'>
+    <Router basename='/~sec2assign1'>
       <Navbar />
       <div className='relative'>
         <Switch>
