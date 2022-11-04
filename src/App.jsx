@@ -22,6 +22,9 @@ export default function App() {
           <Route exact path="/">
             <HomeScreen />
           </Route>
+          <Route exact path="/company">
+            <HomeScreen />
+          </Route>
           <Route exact path="/about">
             <About />
           </Route>
