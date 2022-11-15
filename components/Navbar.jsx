@@ -16,7 +16,7 @@ export default function Navbar() {
                 <Link to={"/"} className="inline-flex items-center text-indigo-500 text-lg font-semibold gap-1">
                     หน้าหลัก
                 </Link>
-                {/* <Link to={"/about"} className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About</Link> */}
+                <Link to={"/about"} className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100">About</Link>
             </nav>
         </header>
     )
