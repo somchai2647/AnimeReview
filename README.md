@@ -3,7 +3,7 @@
 
 ### สามารถเข้ารับชม:  https://animereview.netlify.app/
 เป็นโปรเจครายวิชา Basic Computer ของนักศึกษา ปีที่ 1 สำหรับการศึกษาการสร้างเว็บไซต์สำหรับนำเสนอข้อมูล<br>
-
+It is a project for the Basic Computer course of the first year students to study the creation of a website for presenting information.
 
 
 ## Installation
