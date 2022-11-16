@@ -1,2 +1,41 @@
-# AnimeReview
-https://animereview.netlify.app/
+
+# Anime Review
+
+### สามารถเข้ารับชม:  https://animereview.netlify.app/
+เป็นโปรเจครายวิชา Basic Computer ของนักศึกษา ปีที่ 1 สำหรับการศึกษาการสร้างเว็บไซต์สำหรับนำเสนอข้อมูล<br>
+It is a project for the Basic Computer course of the first year students to study the creation of a website for presenting information.
+
+
+## Installation
+
+Install my-project with yarn
+
+```bash
+  git clone https://github.com/somchai2647/AnimeReview.git
+  cd AnimeReview
+  yarn install
+  yarn dev
+```
+    
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+
+
+## Screenshots
+
+Homescreen
+![App Screenshot](https://github.com/somchai2647/AnimeReview/blob/54aa218aa2299783a1e21363d5fffe68bd564b25/public/assets/screenshort/homescreen.png?raw=true)
+
+Anime List Simple
+![App Screenshot](https://raw.githubusercontent.com/somchai2647/AnimeReview/54aa218aa2299783a1e21363d5fffe68bd564b25/public/assets/screenshort/animelist_ufotable.png)
+
+Anime Review Simple
+![App Screenshot](https://raw.githubusercontent.com/somchai2647/AnimeReview/54aa218aa2299783a1e21363d5fffe68bd564b25/public/assets/screenshort/reviewpage.png)
+
+
+## Authors Review
+
+- [@Nareka1519](https://github.com/Nareka1519)
+
